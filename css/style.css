@@ -7,6 +7,7 @@
   --main-color-white: #fff;
   --bg-button: #f5f4fa;
   --border-bottom-color: #ececec;
+  --border-color: #eeeeee;
 }
 
 h1,
@@ -373,12 +374,8 @@ address {
 .example-item {
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
-
-.example-item:nth-child(3n) {
+. .example-item:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -402,6 +399,10 @@ address {
 }
 
 /* вид работы */
+.cards {
+  margin-top: -8px;
+  border: 1px solid var(--border-color);
+}
 .exmple-job-name {
   padding-left: 24px;
   padding-bottom: 20px;
