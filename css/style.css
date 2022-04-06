@@ -22,16 +22,14 @@ p {
   padding: 0;
 }
 
-.container {
-  max-width: 1600px;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-body {
+.container {
+  max-width: 1600px;
+
   color: var(--main-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -375,7 +373,8 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-. .example-item:nth-child(3n) {
+
+.example-item:nth-child(3n) {
   margin-right: 0px;
 }
 
