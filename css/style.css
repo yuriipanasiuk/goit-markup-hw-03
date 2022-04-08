@@ -60,7 +60,7 @@ img {
 }
 
 .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   color: var(--main-second-color);
   font-size: 36px;
   line-height: 1.16;
@@ -116,7 +116,7 @@ body {
   align-items: center;
 }
 
-.nav-item + .nav-item {
+.nav-item+.nav-item {
   margin-left: 50px;
 }
 
@@ -153,7 +153,7 @@ body {
   text-decoration: none;
 }
 
-.contact-header + .contact-header {
+.contact-header+.contact-header {
   margin-left: 50px;
 }
 
@@ -266,6 +266,7 @@ address {
 .advantages-item {
   width: 270px;
 }
+
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
