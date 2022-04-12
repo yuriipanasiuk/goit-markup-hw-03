@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <div class="container">
         <div class="page-header">
           <nav class="site-nav">
             <a href="./index.html" class="logo-header logo"
@@ -32,7 +32,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="" class="nav-link">Контакты</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -45,16 +45,22 @@
             >
           </div>
         </div>
-      </header>
-      <main>
-        <section class="hero">
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
           <button type="button" class="hero-button">Заказать услугу</button>
-        </section>
-        <section class="section advantages">
+        </div>
+      </section>
+
+      <section class="section advantages">
+        <div class="container">
           <h2 class="visually-hidden">наши преимущества</h2>
           <ul class="advantages-list list">
             <li class="advantages-item">
@@ -89,8 +95,11 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="section work">
+        </div>
+      </section>
+
+      <section class="section work">
+        <div class="container">
           <h2 class="work-title title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-item">
@@ -117,8 +126,11 @@
               />
             </li>
           </ul>
-        </section>
-        <section class="section command">
+        </div>
+      </section>
+
+      <section class="section command">
+        <div class="container">
           <h2 class="command-title title">Наша команда</h2>
           <ul class="command-list list">
             <li class="command-item">
@@ -169,14 +181,15 @@
               </div>
             </li>
           </ul>
-        </section>
-      </main>
-      <footer>
-        <div class="footer-content">
-          <a href="./index.html" class="logo-footer logo"
-            >Web<span class="second-footer-color">Studio</span></a
-          >
         </div>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <div class="container">
+        <a href="./index.html" class="logo-footer logo"
+          >Web<span class="second-footer-color">Studio</span></a
+        >
         <address>
           <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
           <a href="mailto:info@devstudio.com" class="contact-footer"
@@ -186,7 +199,7 @@
             >+38 096 111 11 11</a
           >
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
