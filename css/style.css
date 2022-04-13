@@ -78,7 +78,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -120,7 +120,7 @@ header {
   align-items: center;
 }
 
-.nav-item+.nav-item {
+.nav-item + .nav-item {
   margin-left: 50px;
 }
 
@@ -156,7 +156,7 @@ header {
   text-decoration: none;
 }
 
-.contact-header+.contact-header {
+.contact-header + .contact-header {
   margin-left: 50px;
 }
 
@@ -260,10 +260,6 @@ address {
 }
 
 /* ------------- ADVANTAGES -------------*/
-.advantages {
-  padding-bottom: 0;
-}
-
 .advantages-list {
   display: flex;
   justify-content: center;
@@ -291,6 +287,10 @@ address {
 }
 
 /* ------------- WORK -------------*/
+.work {
+  padding-top: 0;
+}
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
