@@ -189,11 +189,14 @@ address {
 .footer-address {
   margin-bottom: 9px;
   color: var(--footer-adress-color);
+
+  line-height: 1.71;
 }
 
 .contact-footer {
   display: block;
 
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -350,7 +353,7 @@ address {
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .btn {
