@@ -46,14 +46,15 @@ a {
 
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  padding: 0;
-  margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
   border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .list {
@@ -100,16 +101,22 @@ header .container {
 
 .header__nav {
   display: flex;
+  align-items: center;
+}
+
+.header__nav .logo {
+  margin-right: 76px;
 }
 
 .header__menu {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .header__menu-link {
+  padding: 24px 0;
+
   color: var(--main-color-black);
   font-weight: 500;
 }
@@ -130,6 +137,7 @@ header .container {
 }
 
 .header__contacts-link {
+  padding: 24px 0;
   color: var(--main-color);
 }
 
@@ -152,7 +160,7 @@ address {
 }
 
 .hero__title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
   color: var(--white-color);
@@ -163,7 +171,10 @@ address {
 }
 
 .hero__button {
+  display: block;
+  min-width: 169px;
   padding: 16px 32px;
+  margin: 0 auto;
 
   color: var(--white-color);
   font-weight: 500;
@@ -171,6 +182,7 @@ address {
   line-height: 1.5;
   background-color: var(--bg-button);
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -231,7 +243,7 @@ address {
 }
 
 .team__item-body {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team__name {
@@ -269,7 +281,7 @@ address {
 }
 
 .portfolio__item-details {
-  padding: 32px 16px;
+  padding: 32px 0;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -292,11 +304,8 @@ address {
   background-color: var(--bg-color);
 }
 
-.footer__info-wrapper {
-  width: 264px;
-}
 
-.footer__info-wrapper .logo {
+.footer__logo {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -306,5 +315,6 @@ address {
 }
 
 .footer__text {
+  max-width: 264px
   color: #f4f4fd;
 }
