@@ -46,15 +46,16 @@ a {
 
 .visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  overflow: hidden;
 }
 
 .list {
@@ -193,6 +194,15 @@ address {
 
 /* ================= FEATURURES ================= */
 
+.features__title {
+  color: var(--main-color-black);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
 .features__list {
   display: flex;
   gap: 24px;
@@ -281,7 +291,7 @@ address {
 }
 
 .portfolio__item-details {
-  padding: 32px 0;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -304,7 +314,6 @@ address {
   background-color: var(--bg-color);
 }
 
-
 .footer__logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -315,6 +324,6 @@ address {
 }
 
 .footer__text {
-  max-width: 264px
+  max-width: 264px;
   color: #f4f4fd;
 }
